@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby 
+#!/usr/bin/env ruby
 
 require 'pry'
 require_relative '../config/environment'
@@ -8,6 +8,8 @@ def reset_database
   Song.create_table
   Song.create(name: "Hello", album: "25")
   Song.create(name: "99 Problems", album: "The Black Album")
+  Song.create(name: "New York", album: "Sinatra Forever")
+  Song.create(name: "Hotel California", album: "Best of 80's")
 end
 
 reset_database
